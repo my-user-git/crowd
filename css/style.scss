@@ -461,10 +461,7 @@ main {
             height: 100%;
             object-fit: contain;
             object-position: top center;
-
-            @media(max-width: 576px) {
-                width: auto;
-            }
+        
         }
     }
 
