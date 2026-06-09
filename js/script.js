@@ -4,7 +4,7 @@ let swiperInstance = null;
 
 function initSwiper() {
     const isMobile = window.matchMedia('(max-width: 670px)').matches;
-    
+
     if (isMobile && !swiperInstance) {
         swiperInstance = new Swiper('.swiper.stage', {
             slidesPerView: 1,
@@ -31,10 +31,15 @@ window.addEventListener('resize', initSwiper);
 /* players-swiper */
 
 const swiper = new Swiper('.players__swiper', {
-
     loop: true,
     slidesPerView: 1,
     spaceBetween: 32,
+
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true,
+    },
 
     pagination: {
         el: '.players__pagination',
@@ -56,4 +61,32 @@ const swiper = new Swiper('.players__swiper', {
             spaceBetween: 20,
         }
     }
+});
+
+/* scroll */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (target) {
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+
+            // меняем URL без перезагрузки (опционально)
+            if (history.pushState) {
+                history.pushState(null, null, targetId);
+            } else {
+                location.hash = targetId;
+            }
+        }
+    });
 });
