@@ -794,6 +794,12 @@ main {
     grid-template-areas: "picture" "h2" "list" "link";
   }
 }
+@media (max-width: 375px) {
+  .bender__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .bender__h2 {
   margin-top: 30px;
   margin-bottom: 13px;
@@ -830,6 +836,13 @@ main {
      object-fit: contain;
   -o-object-position: top center;
      object-position: top center;
+}
+@media (max-width: 375px) {
+  .bender__picture img {
+    width: auto;
+    margin-top: -10px;
+    margin-left: -16px;
+  }
 }
 .bender__list {
   grid-area: list;
