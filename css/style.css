@@ -949,7 +949,7 @@ main {
 
 /* stage */
 .stage {
-  margin-bottom: clamp(60px, 3vw, 201px);
+  margin-bottom: clamp(60px, 12vw, 201px);
   overflow: visible;
 }
 @media (max-width: 670px) {
