@@ -537,7 +537,7 @@ main {
   right: 0;
   left: 0;
   bottom: 0;
-  background: url("/img/body-bg.png") no-repeat center bottom;
+  background: url("../img/body-bg.png") no-repeat center bottom;
   background-size: cover;
   z-index: -1;
 }
@@ -980,7 +980,7 @@ main {
   .stage__title::after {
     position: absolute;
     content: "";
-    background: url("/img/stage-plane-mobile.png") no-repeat right center;
+    background: url("../img/stage-plane-mobile.png") no-repeat right center;
     left: 50%;
     bottom: -79%;
     width: 335px;
@@ -1129,19 +1129,19 @@ main {
   color: var(--dark31);
 }
 .stage__item:nth-child(2), .stage__item_subitem:nth-child(2) {
-  background: url("/img/stage-2-bg.png") no-repeat center center;
+  background: url("../img/stage-2-bg.png") no-repeat center center;
   background-size: cover;
 }
 .stage__item:nth-child(4), .stage__item_subitem:nth-child(4) {
-  background: url("/img/stage-4-bg.png") no-repeat center center;
+  background: url("../img/stage-4-bg.png") no-repeat center center;
   background-size: cover;
 }
 .stage__item:nth-child(5), .stage__item_subitem:nth-child(5) {
-  background: url("/img/stage-5-bg.png") no-repeat center center;
+  background: url("../img/stage-5-bg.png") no-repeat center center;
   background-size: cover;
 }
 .stage__item:nth-child(1) .stage__item_subitem:nth-child(1), .stage__item:nth-child(3) .stage__item_subitem:nth-child(1), .stage__item_subitem:nth-child(1) .stage__item_subitem:nth-child(1), .stage__item_subitem:nth-child(3) .stage__item_subitem:nth-child(1) {
-  background: url("/img/stage-1-bg.png") no-repeat center center;
+  background: url("../img/stage-1-bg.png") no-repeat center center;
   background-size: cover;
 }
 @media (max-width: 670px) {
@@ -1150,7 +1150,7 @@ main {
   }
 }
 .stage__item:nth-child(1) .stage__item_subitem:nth-child(2), .stage__item:nth-child(3) .stage__item_subitem:nth-child(2), .stage__item_subitem:nth-child(1) .stage__item_subitem:nth-child(2), .stage__item_subitem:nth-child(3) .stage__item_subitem:nth-child(2) {
-  background: url("/img/stage-2-bg.png") no-repeat center center;
+  background: url("../img/stage-2-bg.png") no-repeat center center;
   background-size: cover;
 }
 @media (max-width: 670px) {
@@ -1187,7 +1187,7 @@ main {
 @media (max-width: 670px) {
   .stage__item {
     height: auto;
-    background: url("/img/stage-bg-mobile.png") no-repeat center center;
+    background: url("../img/stage-bg-mobile.png") no-repeat center center;
     background-size: cover;
   }
 }
@@ -1202,7 +1202,7 @@ main {
 }
 @media (max-width: 670px) {
   .stage__item:nth-child(2) {
-    background: url("/img/stage-bg-mobile.png") no-repeat center center;
+    background: url("../img/stage-bg-mobile.png") no-repeat center center;
     background-size: cover;
   }
 }
@@ -1213,7 +1213,7 @@ main {
 }
 @media (max-width: 670px) {
   .stage__item:nth-child(4) {
-    background: url("/img/stage-bg-mobile.png") no-repeat center center;
+    background: url("../img/stage-bg-mobile.png") no-repeat center center;
     background-size: cover;
   }
 }

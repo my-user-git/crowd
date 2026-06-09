@@ -137,7 +137,7 @@ main {
         right: 0;
         left: 0;
         bottom: 0;
-        background: url('/img/body-bg.png') no-repeat center bottom;
+        background: url('../img/body-bg.png') no-repeat center bottom;
         background-size: cover;
         z-index: -1;
     }
@@ -634,7 +634,7 @@ main {
             &::after {
                 position: absolute;
                 content: '';
-                background: url('/img/stage-plane-mobile.png') no-repeat right center;
+                background: url('../img/stage-plane-mobile.png') no-repeat right center;
                 // background-size: contain;
                 left: 50%;
                 bottom: -79%;
@@ -791,7 +791,7 @@ main {
         @for $i from 1 through 7 {
             @if $i==2 or $i==4 or $i==5 {
                 &:nth-child(#{$i}) {
-                    background: url('/img/stage-#{$i}-bg.png') no-repeat center center;
+                    background: url('../img/stage-#{$i}-bg.png') no-repeat center center;
                     background-size: cover;
                 }
             }
@@ -803,7 +803,7 @@ main {
             .stage__item_subitem {
                 @for $i from 1 through 2 {
                     &:nth-child(#{$i}) {
-                        background: url('/img/stage-#{$i}-bg.png') no-repeat center center;
+                        background: url('../img/stage-#{$i}-bg.png') no-repeat center center;
                         background-size: cover;
 
                         @media(max-width: 670px) {
@@ -853,7 +853,7 @@ main {
 
         @media(max-width: 670px) {
             height: auto;
-            background: url('/img/stage-bg-mobile.png') no-repeat center center;
+            background: url('../img/stage-bg-mobile.png') no-repeat center center;
             background-size: cover;
         }
 
@@ -866,7 +866,7 @@ main {
             }
 
             @media(max-width: 670px) {
-                background: url('/img/stage-bg-mobile.png') no-repeat center center;
+                background: url('../img/stage-bg-mobile.png') no-repeat center center;
                 background-size: cover;
             }
         }
@@ -878,7 +878,7 @@ main {
             }
 
             @media(max-width: 670px) {
-                background: url('/img/stage-bg-mobile.png') no-repeat center center;
+                background: url('../img/stage-bg-mobile.png') no-repeat center center;
                 background-size: cover;
             }
         }
