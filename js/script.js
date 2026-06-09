@@ -1,6 +1,5 @@
 /* stage swiper <= 670px */
 
-
 let swiperInstance = null;
 
 function initSwiper() {
@@ -19,11 +18,9 @@ function initSwiper() {
                 prevEl: '.stage__prev',
             },
         });
-        console.log('Swiper stage инициализирован');
     } else if (!isMobile && swiperInstance) {
         swiperInstance.destroy();
         swiperInstance = null;
-        console.log('Swiper stage уничтожен');
     }
 }
 

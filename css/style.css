@@ -327,7 +327,7 @@ template {
   font-display: swap;
   font-style: normal;
 }
-/* swiper nav */
+/* swiper */
 .default-prev,
 .default-next {
   display: block;
@@ -364,7 +364,7 @@ template {
 /* ticker */
 .ticker {
   position: relative;
-  margin-bottom: clamp(49px, 3vw, 78px);
+  margin-bottom: clamp(49px, 8vw, 78px);
   padding: 18px 12px;
   white-space: nowrap;
   background-color: var(--red32);
@@ -389,6 +389,7 @@ template {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  animation: ticker 23s linear infinite;
   font-family: var(--second-family);
   font-weight: 400;
   font-size: clamp(14px, 5vw, 22px);
@@ -425,7 +426,6 @@ template {
   --container-maxwidth: 1366px;
   --font-family: "Golos Text", sans-serif;
   --second-family: "Merriweather-Regular", sans-serif;
-  --merriweather-bold: "Merriweather-Bold", sans-serif;
 }
 
 /* common */

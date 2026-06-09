@@ -1,4 +1,4 @@
-/* swiper nav */
+/* swiper */
 
 .default-prev,
 .default-next {
@@ -37,7 +37,7 @@
 
 .ticker {
     position: relative;
-    margin-bottom: clamp(49px, 3vw, 78px);
+    margin-bottom: clamp(49px, 8vw, 78px);
     padding: 18px 12px;
     white-space: nowrap;
     background-color: var(--red32);
@@ -61,7 +61,7 @@
         display: inline-flex;
         align-items: center;
         gap: 12px;
-        // animation: ticker 23s linear infinite;
+        animation: ticker 23s linear infinite;
         font-family: var(--second-family);
         font-weight: 400;
         font-size: clamp(14px, 5vw, 22px);
