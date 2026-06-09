@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="ticker-circle" width="6" height="6" viewBox="0 0 6 6" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="3" cy="3" r="3" fill="currentColor" />
+    </symbol>
+    <symbol id="arrow-swiper" width="44" height="44" viewBox="0 0 44 44" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="currentColor" />
+        <path d="M24.5382 30.4615L16.0767 22L24.5382 13.5384" stroke="white" stroke-width="2"
+            stroke-linecap="square" />
+    </symbol>
+</svg>
