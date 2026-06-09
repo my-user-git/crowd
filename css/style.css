@@ -513,7 +513,13 @@ p {
 .header {
   position: relative;
   padding-top: 26px;
-  padding-bottom: clamp(37px, 5vw, 57px);
+  padding-bottom: 57px;
+}
+@media (max-width: 375px) {
+  .header {
+    padding-top: 18px;
+    padding-bottom: 37px;
+  }
 }
 
 /* main */
@@ -760,7 +766,7 @@ main {
 
 /* bender */
 .bender {
-  margin-bottom: 156px;
+  margin-bottom: 153px;
 }
 @media (max-width: 375px) {
   .bender {
@@ -769,11 +775,13 @@ main {
 }
 .bender__content {
   display: grid;
+  max-width: 1393px;
   grid-template-areas: "picture h2" "picture list" "picture link";
-  grid-template-columns: 41% 1fr;
-  -moz-column-gap: 17px;
-       column-gap: 17px;
+  grid-template-columns: 41.9% 1fr;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
   align-items: start;
+  padding-left: 45px;
 }
 @media (max-width: 992px) {
   .bender__content {
@@ -787,8 +795,8 @@ main {
   }
 }
 .bender__h2 {
-  margin-top: 29px;
-  margin-bottom: 16px;
+  margin-top: 30px;
+  margin-bottom: 13px;
   grid-area: h2;
   font-family: var(--second-family);
   font-weight: 400;
@@ -810,20 +818,14 @@ main {
 .bender__picture {
   grid-area: picture;
   display: block;
-  width: auto;
+  width: 100%;
   height: 100%;
-  margin-top: -14px;
-  margin-left: -29px;
-}
-@media (max-width: 576px) {
-  .bender__picture {
-    margin-top: -10px;
-    margin-left: -15px;
-  }
 }
 .bender__picture img {
   width: 100%;
   height: 100%;
+  margin-top: -16px;
+  margin-left: 10px;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: top center;
@@ -860,7 +862,7 @@ main {
 }
 .bender__item > span:first-child {
   position: relative;
-  width: 43.6%;
+  width: 42.8%;
   padding-right: 22px;
   opacity: 0.7;
 }
@@ -885,7 +887,7 @@ main {
   }
 }
 .bender__item > span:last-child {
-  padding-left: 11px;
+  padding-left: 15px;
   font-weight: 700;
 }
 @media (max-width: 576px) {
